@@ -55,17 +55,25 @@ Untuk membangun image Docker dari Dockerfile di dalam direktori website-utama, g
       cd website-utama
       docker build -t website-utama .
 
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/f999ff7c-022a-4719-ae85-5763870c071c)
+
+
 Build Image untuk Website Profil
 Untuk membangun image Docker dari Dockerfile di dalam direktori website-profil, gunakan perintah berikut:
 
       cd ../website-profil
       docker build -t website-profil .
 
-# 5. Docker Volume (Modul 14)
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/887c7ace-3df4-4b9c-8552-8336e9067808)
+
+
+# 5. Docker Volume (Modul 14) 
 Buat volume bernama profile-images
 Jika Anda ingin menggunakan volume untuk menyimpan gambar profil, buat volume dengan nama profile-images menggunakan perintah berikut:
 
       docker volume create profile-images
+
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/73322e21-8831-46f9-a336-ef3d8e7f7237)
 
 Konfigurasikan agar container website-utama dan website-profil mengakses gambar profil melalui volume ini
 Untuk mengkonfigurasi container agar menggunakan volume profile-images, jalankan container dengan perintah berikut (opsional):
@@ -73,17 +81,20 @@ Untuk mengkonfigurasi container agar menggunakan volume profile-images, jalankan
       docker run -d --name website-utama --network my-nama-mahasiswa-network -v profile-images:/usr/share/nginx/html/images -p 80:80 website-utama
       docker run -d --name website-profil --network my-nama-mahasiswa-network -v profile-images:/usr/share/nginx/html/images -p 81:80 website-profil
 
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/4657bed1-9ae0-4cd9-9211-3dfca8d0c82a)
+
 
 # 6. Menjalankan Container (Modul 9 & 10)
-Jalankan Container Website Utama
+1. Jalankan Container Website Utama
 
 Untuk menjalankan container dari image website-utama yang telah dibuat, gunakan perintah berikut:
       docker run -d --name website-utama --network my-nama-mahasiswa-network -p 80:80 website-utama
 
-Jalankan Container Website Profil
+2. Jalankan Container Website Profil
 
 Untuk menjalankan container dari image website-profil yang telah dibuat, gunakan perintah berikut:
       docker run -d --name website-profil --network my-nama-mahasiswa-network -p 81:80 website-profil
 
-# Verifikasi
-Setelah semua container berjalan, verifikasi konfigurasi dengan mengakses http://localhost untuk halaman utama dan http://localhost:81 untuk halaman profil. Pada halaman profil, Anda akan melihat gambar dari URL yang diberikan.
+# Pengujian
+1. Akses website
+2. Klik link "profil". Apakah link tersebut mengarah dan menampilkan gambar profil Anda? 
