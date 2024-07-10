@@ -20,19 +20,21 @@ docker network create my-nama-mahasiswa-network
 ![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/8bc8fffd-9443-4b97-b22e-bac09b1f42fe)
 
 # 3. Dockerfile dan Image (Module 11 dan 12) 
-  3.1 Dockerfile untuk Website Utama (direktori website-utama)
-Di dalam direktori website-utama, buat file Dockerfile yang berisi instruksi untuk           mengonfigurasi server Nginx dan menyalin konten direktori ke dalam container. Isi Dockerfile adalah sebagai berikut:
+      3.1 Dockerfile untuk Website Utama (direktori website-utama)
+  
+      Di dalam direktori website-utama, buat file Dockerfile yang berisi instruksi untuk mengonfigurasi server Nginx dan menyalin konten direktori ke dalam container. Isi Dockerfile adalah sebagai berikut:
 
-FROM nginx:latest
-COPY . /usr/share/nginx/html
-EXPOSE 80
+      FROM nginx:latest
+      COPY . /usr/share/nginx/html
+      EXPOSE 80
 
   3.2 Dockerfile untuk Website Profil (direktori website-profil)
-Di dalam direktori website-profil, buat file Dockerfile dengan instruksi yang sama untuk mengonfigurasi server Nginx dan menyalin konten direktori. Isi Dockerfile adalah sebagai berikut:
+  
+      Di dalam direktori website-profil, buat file Dockerfile dengan instruksi yang sama untuk mengonfigurasi server Nginx dan menyalin konten direktori. Isi Dockerfile adalah sebagai berikut:
 
-FROM nginx:latest
-COPY . /usr/share/nginx/html
-EXPOSE 80
+      FROM nginx:latest
+      COPY . /usr/share/nginx/html
+      EXPOSE 80
 
 
 # 4. Build Image 
