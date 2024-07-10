@@ -6,7 +6,7 @@ Dalam tahap persiapan, dua direktori, website-utama dan website-profil, perlu di
 ![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/feb6f903-9a14-4ca1-b6a9-da3ac9aa538e)
 
 _nano website-profil/index.html_
-![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/44de6bce-d5ca-4d46-9d2e-3bca5a1c437c)
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/517f919f-44a3-4b8a-b885-856a2f091cc2)
 
 
 Di dalam direktori website-profil, buat file index.html yang akan menampilkan gambar profil dari URL yang diberikan. Konten index.html di website-profil adalah sebagai berikut:
