@@ -77,11 +77,7 @@ Jika Anda ingin menggunakan volume untuk menyimpan gambar profil, buat volume de
 
 Konfigurasikan agar container website-utama dan website-profil mengakses gambar profil melalui volume ini
 Untuk mengkonfigurasi container agar menggunakan volume profile-images, jalankan container dengan perintah berikut (opsional):
-
-      docker run -d --name website-utama --network my-nama-mahasiswa-network -v profile-images:/usr/share/nginx/html/images -p 80:80 website-utama
-      docker run -d --name website-profil --network my-nama-mahasiswa-network -v profile-images:/usr/share/nginx/html/images -p 81:80 website-profil
-
-![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/4657bed1-9ae0-4cd9-9211-3dfca8d0c82a)
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/7c2088ed-57dc-464e-8f9f-2553a6643c50)
 
 
 # 6. Menjalankan Container (Modul 9 & 10)
@@ -90,11 +86,27 @@ Untuk mengkonfigurasi container agar menggunakan volume profile-images, jalankan
 Untuk menjalankan container dari image website-utama yang telah dibuat, gunakan perintah berikut:
       docker run -d --name website-utama --network my-nama-mahasiswa-network -p 80:80 website-utama
 
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/a2655d96-1436-4e61-8278-38661523756e)
+
+
 2. Jalankan Container Website Profil
 
 Untuk menjalankan container dari image website-profil yang telah dibuat, gunakan perintah berikut:
       docker run -d --name website-profil --network my-nama-mahasiswa-network -p 81:80 website-profil
 
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/96551f2e-54c3-4345-b06b-61eb0e05fbfa)
+
 # Pengujian
 1. Akses website
-2. Klik link "profil". Apakah link tersebut mengarah dan menampilkan gambar profil Anda? 
+   
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/88eaf32c-6c22-4513-9125-bbabd4a2a903)
+
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/72e85038-6e80-4bb8-88bb-de89a5922be0)
+
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/489f2319-ab6c-4abc-8e99-959e1a7b9eb9)
+
+   
+3. Klik link "profil". Apakah link tersebut mengarah dan menampilkan gambar profil Anda?
+
+![image](https://github.com/dwiindahh/Responsi-TeknologiCloud-Indah/assets/126337792/04123827-aed4-441a-89de-75db90aad72b)
+
